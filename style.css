@@ -1,0 +1,82 @@
+body{
+  background-color: Gainsboro;
+  font-family: sans-serif;
+}
+
+div {
+  width: 820px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+}
+
+h1 {
+  color: OrangeRed;
+  margin: 80px 0 20px 0;
+  line-height: 0.5em;
+
+}
+
+img {
+  margin: 0;
+}
+
+nav {
+  text-align: center;
+}
+
+a {
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: DarkSlateGray;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid DarkSlateGray;
+  border-radius: 10px;
+  padding: 5px 70px;
+}
+
+a:hover {
+  color: DarkTurquoise;
+  border: 1px solid DarkTurquoise;
+}
+
+.pic {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.pic:hover {
+  border: none;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+p.footer{
+  text-align: right;
+}
+
+
+article {
+        padding: 40px;
+        margin: 20px 20px 0 0;
+        border: 1px solid DarkTurquoise;
+        border-radius: 10px;
+        flex: 200px;
+      }
+
+header {
+        height: 100px;
+      }
+
+section {
+        display: flex;
+        flex-flow: row wrap;
+        width: 820px;
+        margin: auto;
+      }
