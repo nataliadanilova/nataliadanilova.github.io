@@ -1,0 +1,189 @@
+html {
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden{
+  display: none;
+}
+body{
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #ffffff;
+
+  background-color: black;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+header{
+  background: url(img/head-cat.jpg) no-repeat right bottom;
+  background-size: 500px;
+  min-height: 500px;
+  margin: auto;
+  width: auto;
+  padding: 0 30px;
+}
+.logo-header{
+  margin: 0 12px;
+  width: 46px;
+}
+h1{
+  font-size: 30px;
+  line-height: 1em;
+}
+.city{
+  margin-top: 20px;
+  line-height: 1.4em;
+}
+.first{
+  margin-top: 15px;
+  color: #928d81;
+}
+.header-wrapper{
+    max-width: 210px;
+    margin-top: 30px;
+
+}
+.header-container{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.social-header{
+  display: none;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.social-header-item1{
+  width: 25px;
+  height: 25px;
+  background: url(img/vk.png) no-repeat center;
+  background-size: 45%;
+  list-style: none;
+}
+.social-header-item2{
+  width: 25px;
+  height: 25px;
+  background: url(img/tw.png) no-repeat center;
+  background-size: 45%;
+  list-style: none;
+}
+.social-header-item3{
+  width: 25px;
+  height: 25px;
+  background: url(img/fb.png) no-repeat center;
+  background-size: 20%;
+  list-style: none;
+}
+.button{
+  line-height: 5em;
+  background-color: #db4c3f;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+}
+.button:hover, .button:active {
+  background-color: #b6a766;
+  color: black;
+}
+
+
+
+
+
+
+
+/*Media Queries*/
+
+
+
+
+@media all and (min-width: 768px) {
+    h1 {
+        font-size: 52px;
+
+    }
+    header{
+
+      background: url(img/head-cat.jpg) no-repeat right;
+      background-size: 650px;
+      min-height: 486px;
+      width: auto;
+      padding: 0 64px;
+
+  }
+  .header-wrapper{
+    max-width: 400px;
+
+
+}
+  .logo-header{
+  margin: 0 20px;
+  width: 70px;
+}
+    .social-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: -25px;
+}
+  .header-container{
+    display: flex;
+    flex-direction: row;
+
+}
+  .city{
+  margin-top: 20px;
+}
+
+}
+
+
+
+@media all and (min-width: 1366px) {
+    h1 {
+        font-size: 73px;
+      line-height: 1.2em;
+    }
+    header{
+
+      background: url(img/head-cat.jpg) no-repeat right;
+      width: 1366px;
+      min-height: 690px;
+      padding: 0 120px;
+
+  }
+  .header-wrapper{
+    max-width: 430px;
+
+}
+    .logo-header{
+  margin: 0 20px;
+  width: 92px;
+}
+  .social-header{
+  display: flex;
+  flex-direction: column;
+}
+  .first{
+  margin-top: 15px;
+  color: #928d81;
+}
+
+}
+
