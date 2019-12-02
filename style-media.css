@@ -1,0 +1,200 @@
+/*Media Queries*/
+
+
+@media all and (min-width: 768px) {
+    h1 {
+        font-size: 52px;
+
+    }
+  h2{
+    font-size: 30px;
+  }
+  p{
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
+  .button{
+    font-size: 1.3em;
+    padding: 10px 20px;
+  }
+  .text-gallary{
+    font-size: 16px;
+  }
+    header{
+      background: url(img/head-cat.jpg) no-repeat right;
+      background-size: 650px;
+      min-height: 420px;
+      width: 640px;
+      padding: 0 64px;
+
+  }
+  .features{
+    background: black url(img/foto-features.png) no-repeat left bottom;
+    background-size: 900px;
+      min-height: 780px;
+      width: 640px;
+      padding: 0 64px;
+  }
+
+  .advantages{
+    background: url(img/factura.png);
+      background-size: 1200px;
+      min-height: 420px;
+      width: 640px;
+      padding: 0 64px;
+  }
+
+  .header-wrapper{
+    max-width: 400px;
+
+
+}
+  .logo-header{
+  margin: 0 20px;
+  width: 70px;
+}
+    .social-header{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -25px;
+}
+  .header-container{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+  .city{
+  margin-top: 20px;
+}
+  .gallery{
+    background: url(img/factura.png);
+      background-size: 1200px;
+      min-height: 855px;
+      width: 648px;
+      padding: 0 60px;
+  }
+
+  .slider__item>div {
+    height: 550px;
+  }
+
+  .features-list{
+  width: 300px;
+  margin-left: 400px;
+}
+.features-list-item{
+  list-style: none;
+  text-align: left;
+  margin-top: 20px;
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+
+.menu__item {
+  padding: 12px 0;
+  width: 768px;}
+
+}
+
+/* */
+
+@media all and (min-width: 1366px) {
+    h1 {
+        font-size: 73px;
+      line-height: 1.2em;
+    }
+    h2{
+    font-size: 40px;
+  }
+  p{
+    font-size: 2em;
+    line-height: 1.8em;
+  }
+    .button{
+    font-size: 1.5em;
+    padding: 15px 30px;
+  }
+  .text-gallary{
+    font-size: 20px;
+  }
+    header{
+
+      background: url(img/head-cat.jpg) no-repeat right;
+      width: 1126px;
+      min-height: 680px;
+      padding: 0 120px;
+
+  }
+  .features{
+    background: black url(img/foto-features.png) no-repeat left bottom;
+    background-size: 1087px;
+      width: 1126px;
+      min-height: 970px;
+      padding: 0 120px;
+  }
+
+  .advantages{
+    background: url(img/factura.png);
+    background-size: 1500px;
+      width: 1126px;
+      min-height: 625;
+      padding: 0 120px;
+  }
+
+    .header-container{
+    flex-direction: row;
+
+}
+  .header-wrapper{
+    max-width: 430px;
+
+}
+    .logo-header{
+  margin: 0 20px;
+  width: 92px;
+}
+  .social-header{
+  display: flex;
+  flex-direction: column;
+    justify-content: flex-end;
+}
+  .first{
+  margin-top: 15px;
+  color: #928d81;
+}
+  .gallery{
+    background: url(img/factura.png);
+    background-size: 1500px;
+      width: 1126px;
+      min-height: 900px;
+      padding: 0 120px;
+  }
+  .slider__item>div {
+    height: 800px;
+  }
+    .features-list{
+  width: 550px;
+  margin-left: 650px;
+}
+.features-list-item{
+  font-size: 2em;
+  line-height: 1.8em;
+  list-style: none;
+  text-align: left;
+  margin-top: 30px;
+}
+  .features-list-item:before{
+  content: "";
+  background: url(img/avatar.png) center 10px no-repeat;
+  background-size: 30px;
+  width: 30px;
+  height: 60px;
+  display: block;
+  float: left;
+  margin-right:20px;
+}
+.menu__item {
+  padding: 12px 0;
+  width: 1366px;}
+
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+    .gallery{
+      width: 600px;
+      background-color: grey;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+    }
+    .gallery_pics{
+      padding: 0;
+      width: 2000px;
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      position: relative;
+      left:-210px;
+    }
+    .gallery_pics>li{
+      width: 300px;
+      height: 200px;
+      margin: 0px 20px;
+      background-color: red;
+      transition: 2s;
+    }
+    .controls{
+      text-decoration: none;
+      padding: 10px;
+      color:white;
+      font-size: 40px;
+      font-weight: bold;
+      position: absolute;
+      top: 80px;
+    }
+    .left{
+      left:70px;
+    }
+    .right{
+      right:70px;
+    }
+  </style>
+</head>
+<body>
+  <section class='gallery'>
+    <ul class='gallery_pics'>
+      <li class="gallery_pic" id="s0">0</li>
+      <li class="gallery_pic" id="s1">1</li>
+      <li class="gallery_pic" id="s2">2</li>
+      <li class="gallery_pic" id="s3">3</li>
+    </ul>
+    <a href="#" class="controls left" onclick="prevSlide()"><</a>
+    <a href="#" class="controls right" onclick="nextSlide()">></a>
+  </section>
+  <script>
+    var slides = document.querySelectorAll(".gallery_pic");
+    for (i = 0; i < slides.length; i++) {
+          slides[i].style.transform="translateX(0px)";
+    }
+    function prevSlide(){
+      switch(slides[0].style.transform){
+        case 'translateX(340px)': break;
+        case 'translateX(0px)': for (i = 0; i < slides.length; i++) {slides[i].style.transform="translateX(340px)"};break
+        case 'translateX(-340px)': for (i = 0; i < slides.length; i++) {slides[i].style.transform="translateX(0px)"};break
+        case 'translateX(-680px)': for (i = 0; i < slides.length; i++) {slides[i].style.transform="translateX(-340px)"};
+      }
+    }
+    function nextSlide(){
+      switch(slides[0].style.transform){
+        case 'translateX(340px)': for (i = 0; i < slides.length; i++) {slides[i].style.transform="translateX(0px)"}; break;
+        case 'translateX(0px)': for (i = 0; i < slides.length; i++) {slides[i].style.transform="translateX(-340px)"};break;
+        case 'translateX(-340px)': for (i = 0; i < slides.length; i++) {slides[i].style.transform="translateX(-680px)"};
+      }
+    }
+
+  </script>
+</body>
+</html>

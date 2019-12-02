@@ -4,6 +4,7 @@
 <head>
  <meta charset="utf-8">
  <link href="style.css" rel="stylesheet">
+ <link href="style-media.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Питомник Мейн Кунов</title>
@@ -12,18 +13,21 @@
 <body>
 
   <header>
-<nav class="visually-hidden">
-<ul class="main-nav">
-<li>Магазин</li>
-<li>Галерея</li>
-<li>Преимущества</li>
-<li>Об уходе</li>
-<li>Наша команда</li>
-<li>Вопрос-Ответ</li>
-<li>Отзывы</li>
-<li>Контакты</li>
-</ul>
-</nav>
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+      <li><a class="menu__item" href="#">Питомцы</a></li>
+			<li><a class="menu__item" href="#">Особенности породы</a></li>
+			<li><a class="menu__item" href="#">Почему именно мы?</a></li>
+			<li><a class="menu__item" href="#">Об уходе</a></li>
+			<li><a class="menu__item" href="#">Контакты</a></li>
+    </ul>
+  </div>
+
 <div class="header-container">
 <ul class="social-header">
 <li class="social-header-item1"><a href="#"><p class="visually-hidden">ВКонтакте</p></a></li>
@@ -42,41 +46,62 @@
   </header>
 
   <main>
-  <section class="gallery">
+
+<section class="gallery">
 <h2>Питомцы</h2>
 
-    <p class="">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
+    <p class="text-gallary">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
 
     <h2 class="visually-hidden">Галерея питомцев</h2>
-    <ul>
-<li>Предыдущий слайд</li>
-<li>Следующий слайд</li>
-<li>Больше котиков</li>
-</ul>
+
+    <div class="slider">
+      <div class="slider__wrapper">
+        <div class="slider__item">
+          <div class="slid1"></div>
+        </div>
+        <div class="slider__item">
+          <div class="slid2"></div>
+        </div>
+        <div class="slider__item">
+          <div class="slid3"></div>
+        </div>
+        <div class="slider__item">
+          <div class="slid4"></div>
+        </div>
+      </div>
+      <a class="slider__control slider__control_left" href="#" role="button"></a>
+      <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+    </div>
+
+
+
+    <a href="#" class="button">Больше котиков</a>
 </section>
+
+
 <section class="features">
 <h2>Особенности породы</h2>
 
 <p>Мейн-Кун — это порода, которая вызывает к себе уважение.
 
 Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных</p>
-<ul>
-<li>Легко уживается в семьях с детьми или другими животными</li>
+<ul class="features-list">
+<li class="features-list-item">Легко уживается в семьях с детьми или другими животными</li>
 
-<li>Выполняет команды как дрессированная собака</li>
+<li class="features-list-item">Выполняет команды как дрессированная собака</li>
 
-<li>Вес может достигать 12 кг, а длина 1 м</li>
+<li class="features-list-item">Вес может достигать 12 кг, а длина 1 м</li>
 
-<li>Внешний вид этой кошки похож на дикую рысь</li>
+<li class="features-list-item">Внешний вид этой кошки похож на дикую рысь</li>
 </ul>
 </section>
 <section class="advantages">
 <h2>Почему именно мы?</h2>
 <p>Приобретая животное в нашем питомнике, вы получите</p>
-<ul>
-<li>Бесплатное ветеринарное обслуживание 5 лет</li>
-<li>Консультирование по любому вопросу 24 часа в сутки</li>
-<li>Индивидуальный подбор питания для вашего кота</li>
+<ul class="advantages-list">
+<li class="advantages-list-item">Бесплатное ветеринарное обслуживание 5 лет</li>
+<li class="advantages-list-item">Консультирование по любому вопросу 24 часа в сутки</li>
+<li class="advantages-list-item">Индивидуальный подбор питания для вашего кота</li>
 </ul>
 </section>
 <section class="care">
@@ -147,6 +172,7 @@
 <p>Новосибирск, Пушкинский проспект, 19</p>
     <a class="tel" href="tel:+73839006465">+7 (383) 900-64-65</a>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
